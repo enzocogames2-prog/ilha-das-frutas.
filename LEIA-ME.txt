@@ -1,0 +1,26 @@
+ILHA DAS FRUTAS — PROJETO ANDROID
+
+Este pacote é o projeto-fonte Android (WebView) do jogo, não um APK já compilado.
+
+Como gerar o APK:
+1. Instale o Android Studio em um computador.
+2. Abra a pasta IlhaDasFrutasAndroid no Android Studio.
+3. Aguarde o Gradle sincronizar e instalar o Android SDK Platform 35, se solicitado.
+4. Use Build > Build Bundle(s) / APK(s) > Build APK(s).
+5. O APK de depuração ficará em app/build/outputs/apk/debug/app-debug.apk.
+
+Observações:
+- O jogo é carregado de app/src/main/assets/index.html.
+- O jogo usa Three.js pela CDN cdnjs, então a primeira inicialização e a execução precisam de internet.
+- A tela é configurada em modo paisagem e tela cheia.
+
+OPÇÃO: GERAR O APK AUTOMATICAMENTE PELO GITHUB (SEM INSTALAR ANDROID STUDIO)
+1. Extraia este ZIP no computador.
+2. Entre em github.com, crie uma conta ou faça login e crie um repositório novo.
+3. Envie todos os arquivos e pastas desta pasta IlhaDasFrutasAndroid para o repositório (incluindo a pasta oculta .github).
+4. Abra a aba Actions do repositório e selecione “Gerar APK Android”.
+5. Toque em “Run workflow” e aguarde a compilação terminar.
+6. Abra a execução concluída; em Artifacts, baixe “Ilha-das-Frutas-APK”.
+7. Extraia o arquivo baixado para encontrar app-debug.apk e instale no Android.
+
+A compilação em nuvem depende de uma conta GitHub e de enviar o projeto. Este ZIP ainda não é o APK pronto.
